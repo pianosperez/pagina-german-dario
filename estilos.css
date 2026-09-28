@@ -1,0 +1,167 @@
+```css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1eb;
+    color: #222222;
+}
+
+header {
+    background-color: #111111;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+section {
+    padding: 70px 12%;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#inicio {
+    background-color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#inicio h2 {
+    font-size: 45px;
+}
+
+button {
+    background-color: #111111;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #111111;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #444444;
+}
+
+#pianos,
+#partituras,
+#musica {
+    background-color: #f4f1eb;
+}
+
+#historia {
+    background-color: white;
+}
+
+#contacto {
+    background-color: #f4f1eb;
+}
+
+footer {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#catalogo {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.producto {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.producto img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.spotify-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.spotify-boton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #191414;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.spotify-boton:hover {
+    background-color: #000000;
+    transform: translateY(-2px);
+}
+
+.spotify-boton svg {
+    width: 28px;
+    height: 28px;
+}
+
+.spotify-boton svg circle {
+    fill: #1DB954;
+}
+
+.spotify-boton svg path {
+    fill: none;
+    stroke: #191414;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+}
