@@ -1,158 +1,309 @@
-```css
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f1eb;
-    color: #222222;
+
+/* =========================
+   ESTILO GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f4ead8;
+    color: #241b16;
+}
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
 header {
-    background-color: #111111;
-    color: white;
-    padding: 25px;
+    background: linear-gradient(135deg, #090909, #21150f, #090909);
+    color: #f5dfaa;
+    padding: 30px 20px;
     text-align: center;
+    border-bottom: 4px solid #c49a4a;
 }
 
 header h1 {
     margin: 0;
-    font-size: 35px;
+    font-size: 40px;
+    letter-spacing: 2px;
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 nav a {
-    color: white;
+    color: #f5ead3;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 17px;
+    transition: 0.25s;
 }
 
+nav a:hover {
+    color: #d5a84b;
+}
+
+
+/* =========================
+   SECCIONES
+   ========================= */
+
 section {
-    padding: 70px 12%;
+    padding: 80px 10%;
+    text-align: center;
 }
 
 section h2 {
-    font-size: 32px;
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #21150f;
 }
+
+section p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   INICIO
+   ========================= */
 
 #inicio {
-    background-color: white;
-    text-align: center;
-    padding: 120px 20px;
+    background:
+        linear-gradient(rgba(255, 250, 240, 0.90), rgba(255, 250, 240, 0.90)),
+        repeating-linear-gradient(
+            90deg,
+            #ead7b5 0px,
+            #ead7b5 2px,
+            #f4ead8 2px,
+            #f4ead8 45px
+        );
+
+    padding: 100px 20px;
 }
 
-#inicio h2 {
-    font-size: 45px;
-}
-
-button {
-    background-color: #111111;
-    color: white;
-    border: none;
-    padding: 13px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #444444;
-}
-
-.boton {
-    display: inline-block;
-    background-color: #111111;
-    color: white;
-    text-decoration: none;
-    padding: 13px 25px;
-    border-radius: 5px;
-}
-
-.boton:hover {
-    background-color: #444444;
-}
-
-#pianos,
-#partituras,
-#musica {
-    background-color: #f4f1eb;
-}
-
-#historia {
-    background-color: white;
-}
-
-#contacto {
-    background-color: #f4f1eb;
-}
-
-footer {
-    background-color: #111111;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-img {
+#inicio img {
     max-width: 600px;
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+#inicio h2 {
+    font-size: 52px;
+    color: #17100c;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    margin: 8px;
+}
+
+#inicio p:first-of-type {
+    color: #9a712b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   BOTONES GENERALES
+   ========================= */
+
+button,
+.boton {
+    display: inline-block;
+    background: linear-gradient(135deg, #171717, #33251b);
+    color: #f8e8bd;
+    border: 2px solid #b88a3b;
+    padding: 16px 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.20);
+    transition: 0.25s;
+}
+
+button:hover,
+.boton:hover {
+    background: linear-gradient(135deg, #b88a3b, #d6ad5b);
+    color: #17100c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   PIANOS
+   ========================= */
+
+#pianos {
+    background:
+        linear-gradient(rgba(236, 216, 182, 0.94), rgba(236, 216, 182, 0.94)),
+        repeating-linear-gradient(
+            90deg,
+            #7c4b28 0px,
+            #7c4b28 3px,
+            #9a6136 3px,
+            #9a6136 35px
+        );
+}
+
+#pianos h2 {
+    color: #24140c;
 }
 
 #catalogo {
     display: none;
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .producto {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 300px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #fffaf0, #ead8b8);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 350px;
     margin: 20px;
     display: inline-block;
     vertical-align: top;
+
+    border: 2px solid #bd9145;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18),
+        inset 0 0 0 4px rgba(255, 255, 255, 0.35);
+
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.25),
+        inset 0 0 0 4px rgba(255, 255, 255, 0.35);
 }
 
 .producto img {
     max-width: 100%;
     width: 100%;
+    height: auto;
     border-radius: 8px;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.20);
 }
+
+.producto h3 {
+    font-size: 27px;
+    color: #21150f;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   PARTITURAS
+   ========================= */
+
+#partituras {
+    background-color: #fffaf0;
+    position: relative;
+}
+
+#partituras h2 {
+    color: #17100c;
+}
+
+#partituras::after {
+    content: "♩  ♪  ♫  ♬";
+    display: block;
+    margin-top: 35px;
+    color: #b88a3b;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+
+/* =========================
+   MÚSICA
+   ========================= */
+
+#musica {
+    background:
+        linear-gradient(135deg, #171717, #292019);
+    color: #f5ead3;
+}
+
+#musica h2 {
+    color: #e1b75c;
+}
+
+#musica p {
+    color: #f5ead3;
+}
+
+
+/* BOTONES DE SPOTIFY */
+
 .spotify-botones {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .spotify-boton {
     display: flex;
     align-items: center;
-    gap: 12px;
-    background-color: #191414;
+    justify-content: center;
+    gap: 15px;
+
+    background-color: #111111;
     color: white;
+
     text-decoration: none;
-    padding: 14px 24px;
-    border-radius: 30px;
-    font-size: 16px;
+
+    padding: 18px 30px;
+    min-width: 300px;
+
+    border-radius: 50px;
+    border: 2px solid #1DB954;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
     font-weight: bold;
-    transition: 0.2s;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.35);
+
+    transition: 0.25s;
 }
 
 .spotify-boton:hover {
-    background-color: #000000;
-    transform: translateY(-2px);
+    background-color: #1DB954;
+    color: #071a0c;
+    transform: translateY(-4px);
 }
 
 .spotify-boton svg {
-    width: 28px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
 }
 
 .spotify-boton svg circle {
@@ -161,7 +312,113 @@ img {
 
 .spotify-boton svg path {
     fill: none;
-    stroke: #191414;
+    stroke: #111111;
     stroke-width: 1.5;
     stroke-linecap: round;
 }
+
+
+/* =========================
+   HISTORIA
+   ========================= */
+
+#historia {
+    background:
+        linear-gradient(rgba(255, 250, 240, 0.94), rgba(255, 250, 240, 0.94)),
+        repeating-linear-gradient(
+            90deg,
+            #e8d3ad 0px,
+            #e8d3ad 2px,
+            #f9efdc 2px,
+            #f9efdc 50px
+        );
+}
+
+#historia h2 {
+    color: #24140c;
+}
+
+
+/* =========================
+   CONTACTO
+   ========================= */
+
+#contacto {
+    background: linear-gradient(135deg, #3a2417, #17100c);
+    color: #f7e8c4;
+}
+
+#contacto h2 {
+    color: #d9ad50;
+}
+
+#contacto p {
+    color: #f8ead0;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+   ========================= */
+
+footer {
+    background-color: #080808;
+    color: #d9b86c;
+    text-align: center;
+    padding: 35px;
+    border-top: 3px solid #b88a3b;
+}
+
+
+/* =========================
+   IMÁGENES
+   ========================= */
+
+img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   CELULAR
+   ========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+
+    #inicio h2 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 31px;
+    }
+
+    .spotify-boton {
+        min-width: 0;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .producto {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+}
+
